@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link rel="stylesheet" href="https://fonts.google.com/specimen/press+start+2p">
+<style>
+
+body{
+background-color: #D22B2B;
+
+}
+
+.row {
+  width: 75%;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  border-spacing: 25px;
+}
+
+.card::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.card{
+    display: table-cell;
+    border-radius: 8px;
+    border: 3px solid black;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    width: 33.3%;
+    height: auto;
+}
+
+
+
+
+img{
+    object-fit:contain;
+    height: 125px;
+    width: 100%;
+}
+
+.floating{
+    animation: float 10s infinite linear;
+    object-fit:contain;
+    height: 125px;
+    width: 100%;
+    }
+
+ @keyframes float {
+  0% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+  25% {
+    transform: rotate(10deg) translate(20px, 3px);
+  }
+  50% {
+    transform: rotate(-10deg) translate(-3px, 13px);
+  }
+  75% {
+    transform: rotate(8deg) translate(-16px, -10px);
+  }
+  100% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+ }
+
+ .bounce{
+animation: bounce 1s ease-in infinite;
+}
+
+@keyframes bounce {
+  50% {
+     transform: translateY(-3px);
+  }
+}
+
+
+.grass {
+    padding: 4px 8px;
+    background-color:forestgreen;
+    border: 2px solid darkslategrey;
+
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+}
+.rock {
+    padding: 4px 10px;
+    background-color:tan;
+    border: 2px solid darkgoldenrod;
+
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+}
+.water {
+    padding: 4px 8px;
+    background-color:dodgerblue;
+    border: 2px solid darkblue;
+
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+}
+.dragon {
+    padding: 4px 10px;
+    background-color: rgb(106, 119, 233);
+    border: 2px solid navy;
+
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+}
+
+.fire 
+{
+    padding: 4px 8px;
+    background-color:orangered;
+    border: 2px solid firebrick;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+}
+.poison {
+    padding: 4px 10px;
+    background-color:mediumslateblue;
+    border: 2px solid indigo;
+
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+}
+
+/*style div elements that have class = to name*/
+.name {
+    font-size:36px;
+    margin-top: 16px;
+}
+
+p {
+    text-align: center;
+    font-size: 14px;
+    color: brown;
+    line-height: 150%;
+
+}
+
+.details{
+    text-align: center;
+        padding: 16px;
+}
+
+
+body {
+
+  font-family: "Press Start 2P";
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+</style>
+</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POKEDEX CARD TEST</title>
+
+<body>
+    <!--ROW ID TO HOLD THE CARD-->
+<div class = "row" >
+
+        <!--CARD CLASS FOR THE CARD-->
+        <div class = "card"> <!--CHEEPIT-->
+            <img src = "cheepit-export.png" alt ="Cheepit" = class = bounce >
+
+            <!--CARD__DETAILS CLASS TO HOLD THE DETAILS-->
+            <div class = "details">
+                <!--Span with type class for the type-->
+                <span class = "grass">Grass</span>
+                
+                <!--div with Name class for the name of the Pokemon-->
+                <div class="name">Cheepit</div>
+                <p>It uses its rock-hard head to crush nuts and seeds.</p>
+                <p>Its head is heavier than its body, so when it gets too excited, it’s prone to tipping over.</p>
+            
+            </div>
+
+        </div>
+ <!--RAPTANIN-->       
+        <!--CARD CLASS FOR THE CARD-->
+        <div class = "card">
+            <img src = "raptanin-export.png" alt ="Raptanin" = class = bounce >
+
+            <!--CARD__DETAILS CLASS TO HOLD THE DETAILS-->
+            <div class = "details">
+                <!--Span with type class for the type-->
+                <span class = "grass">Grass</span>
+        
+                
+                
+                <!--div with Name class for the name of the Pokemon-->
+                <div class="name">Raptanin</div>
+                <p>These Pokemon have a rebellious streak and will challenge their own trainer to a battle if riled up.</p> 
+                <p>In the wild, flock hierarchy is determined by whichever individual has the most impressive crest..</p>
+                
+            </div>
+
+        </div>
+ <!--KOTYLODON-->       
+         <div class = "card">
+            <img src = "kotylodon-export.png" alt ="Kotylodon" = class = bounce >
+
+            <!--CARD__DETAILS CLASS TO HOLD THE DETAILS-->
+            <div class = "details">
+                <!--Span with type class for the type-->
+                <span class = "grass">Grass</span>
+                <span class = "rock">Rock</span>
+        
+                
+                
+                <!--div with Name class for the name of the Pokemon-->
+                <div class="name">Kotylodon</div>
+                <p>It uses its bright warning plumage in threat display. It frequently picks fights.</p> 
+                <p>It is fiercely territorial and will rip up plants and trees that it perceives to be invading its habitat. 
+                Seeds that fall from its feathers are harder than any known stone.</p> 
+                
+                
+            </div>
+
+
+        </div>
+
+</div>
+
+<div>
+<div class = "row" >
+
+        <!--CARD CLASS FOR THE CARD-->
+ <!--INKLE-->       
+        <div class = "card"> 
+            <img src = "inkle-export.png" alt ="Inkle" = class = floating>
+            
+            <!--CARD__DETAILS CLASS TO HOLD THE DETAILS-->
+            <div class = "details">
+                <span class = "water">Water</span>
+                <!--Span with type class for the type-->
+                <div class="name">Inkle</div>
+                
+                
+                <!--div with Name class for the name of the Pokemon-->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            
+            </div>
+
+        </div>
+ <!--JELLINK-->       
+        <!--CARD CLASS FOR THE CARD-->
+        <div class = "card" >
+            <img src = "jellink-export.png" alt ="Jellink" class = floating>
+
+            <!--CARD__DETAILS CLASS TO HOLD THE DETAILS-->
+            <div class = "details">
+                <!--Span with type class for the type-->
+                <span class = "water">Water</span>        
+                
+                <!--div with Name class for the name of the Pokemon-->
+                <div class="name">Jellink</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> 
+
+            </div>
+
+        </div>
+ <!--MEDUMBRA-->       
+         <div class = "card">
+            <img src = "medumbra-export.png" alt ="Medumbra" class = floating>
+
+            <!--CARD__DETAILS CLASS TO HOLD THE DETAILS-->
+            <div class = "details">
+                <!--Span with type class for the type-->
+                <span class = "water">Water</span>
+                <span class = "dragon">Dragon</span>
+        
+                
+
+                <!--div with Name class for the name of the Pokemon-->
+                <div class="name">Medumbra</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>                 
+                
+            </div>
+            </div>
+
+</div>
+
+<div>
+<div class = "row" >
+
+ <!--MONGROWL-->       
+        <div class = "card"> 
+            <img src = "mongrowl-export.png" alt ="Mongrowl"= class = bounce  >
+   
+
+            <!--CARD__DETAILS CLASS TO HOLD THE DETAILS-->
+            <div class = "details">
+                <span class = "fire">Fire</span>
+                <!--Span with type class for the type-->
+                <div class="name">Mongrowl</div>
+                
+                
+                <!--div with Name class for the name of the Pokemon-->
+                <p>It disperses heat through its large ears. <br>The intensity and heat of the flames indicate Mongrowl’s emotions.</p>
+                <p>Its flames never goes out, just like its loyalty.</p>
+            
+            </div>
+
+        </div>
+ <!--SCORCHOUND-->       
+        <div class = "card">
+            <img src = "scorchound-export.png" alt ="Scorchound" = class = bounce >
+
+            <!--CARD__DETAILS CLASS TO HOLD THE DETAILS-->
+            <div class = "details">
+                <!--Span with type class for the type-->
+                <span class = "fire">Fire</span>        
+                
+                <!--div with Name class for the name of the Pokemon-->
+                <div class="name">Scorchound</div>
+                <p>As Scorchound matures, it displays erratic and aggressive behaviour. Its own tail begins vaguely resembling a serpent as it gains its own separate conscience.</p>
+                <p>Scorchound will often seek solitude, afraid of accidentally harming its Trainer..</p> 
+
+            </div>
+
+        </div>
+ <!--HOWLLFIRE-->       
+         <div class = "card">
+            <img src = "howlfire-export.png" alt ="Howlfire" = class = bounce >
+
+            <!--CARD__DETAILS CLASS TO HOLD THE DETAILS-->
+            <div class = "details">
+                <!--Span with type class for the type-->
+                <span class = "fire">Fire</span>
+                <span class = "poison">Poison</span>
+        
+                
+
+                <!--div with Name class for the name of the Pokemon-->
+                <div class="name">Howlfire</div>
+                <p>Despite the intense and dangerous appearance of its flames, Howlfire has it under control.</p>
+                <p>The more close it is with its Trainer, the hotter its flames burn.</p>                 
+
+            </div>
+            </div>
+</div>
+
+</body>
+</html>
