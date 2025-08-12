@@ -2,177 +2,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel ="stylesheet" href="stylesheet.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=VT323&display=swap');
+</style>
 
-<link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+</head>
 
 <style>
+    .name { 
+        font-family: "Press Start 2P";}
+    .details {
+        font-family: Pixelify Sans;}
 
-body{
-background-color: #D22B2B;
-font-family: 'press_start_2pregular';
-}
-
-.row {
-  width: 75%;
-  margin: auto;
-  justify-content: space-around;
-  align-items: center;
-  border-spacing: 25px;
-}
-
-.card::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.card{
-    display: table-cell;
-    border-radius: 8px;
-    border: 3px solid black;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    width: 33.3%;
-    height: auto;
-}
-
-
-img{
-    object-fit:contain;
-    height: 125px;
-    width: 100%;
-}
-
-.floating{
-    animation: float 10s infinite linear;
-    object-fit:contain;
-    height: 125px;
-    width: 100%;
-    }
-
- @keyframes float {
-  0% {
-    transform: rotate(0deg) translate(0, 0);
-  }
-  25% {
-    transform: rotate(10deg) translate(20px, 3px);
-  }
-  50% {
-    transform: rotate(-10deg) translate(-3px, 13px);
-  }
-  75% {
-    transform: rotate(8deg) translate(-16px, -10px);
-  }
-  100% {
-    transform: rotate(0deg) translate(0, 0);
-  }
- }
-
- .bounce{
-animation: bounce 1s ease-in infinite;
-}
-
-@keyframes bounce {
-  50% {
-     transform: translateY(-3px);
-  }
-}
-
-
-.grass {
-    padding: 4px 8px;
-    background-color:forestgreen;
-    border: 2px solid darkslategrey;
-
-    border-radius: 5px;
-    font-size: 12px;
-    font-weight: 700;
-    color: white;
-}
-.rock {
-    padding: 4px 10px;
-    background-color:tan;
-    border: 2px solid darkgoldenrod;
-
-    border-radius: 5px;
-    font-size: 12px;
-    font-weight: 700;
-    color: white;
-}
-.water {
-    padding: 4px 8px;
-    background-color:dodgerblue;
-    border: 2px solid darkblue;
-
-    border-radius: 5px;
-    font-size: 12px;
-    font-weight: 700;
-    color: white;
-}
-.dragon {
-    padding: 4px 10px;
-    background-color: rgb(106, 119, 233);
-    border: 2px solid navy;
-
-    border-radius: 5px;
-    font-size: 12px;
-    font-weight: 700;
-    color: white;
-}
-
-.fire 
-{
-    padding: 4px 8px;
-    background-color:orangered;
-    border: 2px solid firebrick;
-    border-radius: 5px;
-    font-size: 12px;
-    font-weight: 700;
-    color: white;
-}
-.poison {
-    padding: 4px 10px;
-    background-color:mediumslateblue;
-    border: 2px solid indigo;
-
-    border-radius: 5px;
-    font-size: 12px;
-    font-weight: 700;
-    color: white;
-}
-
-/*style div elements that have class = to name*/
-.name {
-    font-family: 'press_start_2pregular';
-    font-size:36px;
-    margin-top: 16px;
-}
-
-p {
-    text-align: center;
-    font-size: 14px;
-    color: brown;
-    line-height: 150%;
-
-}
-
-.details{
-    text-align: center;
-        padding: 16px;
-}
-
-
-body {
-
-  font-family: "Press Start 2P";
-  font-weight: 400;
-  font-style: normal;
-
-}
 
 </style>
-</head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>POKEDEX</title>
@@ -186,10 +31,9 @@ body {
         <div class = "card"> <!--CHEEPIT-->
             <img src = "cheepit-export.png" alt ="Cheepit" = class = bounce >
 
-            <!--CARD__DETAILS CLASS TO HOLD THE DETAILS-->
-            <div class = "details">
-                <!--Span with type class for the type-->
-                <span class = "grass">Grass</span>
+           <div class = "details">
+                <!--button with type class for the type-->
+                <button class = "grass">Grass</button>
                 
                 <!--div with Name class for the name of the Pokemon-->
                 <div class="name">Cheepit</div>
@@ -206,8 +50,8 @@ body {
 
             <!--CARD__DETAILS CLASS TO HOLD THE DETAILS-->
             <div class = "details">
-                <!--Span with type class for the type-->
-                <span class = "grass">Grass</span>
+                <!--Button with type class for the type-->
+                <button class = "grass">Grass</button>
         
                 
                 
@@ -225,12 +69,10 @@ body {
 
             <!--CARD__DETAILS CLASS TO HOLD THE DETAILS-->
             <div class = "details">
-                <!--Span with type class for the type-->
-                <span class = "grass">Grass</span>
-                <span class = "rock">Rock</span>
-        
-                
-                
+                <!--button with type class for the type-->
+                <button class = "grass">Grass</button>
+                <button class="rock">Rock</button>
+    
                 <!--div with Name class for the name of the Pokemon-->
                 <div class="name">Kotylodon</div>
                 <p>It uses its bright warning plumage in threat display. It frequently picks fights.</p> 
@@ -255,8 +97,8 @@ body {
             
             <!--CARD__DETAILS CLASS TO HOLD THE DETAILS-->
             <div class = "details">
-                <span class = "water">Water</span>
-                <!--Span with type class for the type-->
+                <button class = "water">Water</button>
+                <!--button with type class for the type-->
                 <div class="name">Inkle</div>
                 
                 
@@ -273,8 +115,8 @@ body {
 
             <!--CARD__DETAILS CLASS TO HOLD THE DETAILS-->
             <div class = "details">
-                <!--Span with type class for the type-->
-                <span class = "water">Water</span>        
+                <!--button with type class for the type-->
+                <button class = "water">Water</button>        
                 
                 <!--div with Name class for the name of the Pokemon-->
                 <div class="name">Jellink</div>
@@ -289,9 +131,9 @@ body {
 
             <!--CARD__DETAILS CLASS TO HOLD THE DETAILS-->
             <div class = "details">
-                <!--Span with type class for the type-->
-                <span class = "water">Water</span>
-                <span class = "dragon">Dragon</span>
+                <!--button with type class for the type-->
+                <button class = "water">Water</button>
+                <button class = "dragon">Dragon</button>
         
                 
 
@@ -314,8 +156,8 @@ body {
 
             <!--CARD__DETAILS CLASS TO HOLD THE DETAILS-->
             <div class = "details">
-                <span class = "fire">Fire</span>
-                <!--Span with type class for the type-->
+                <button class = "fire">Fire</button>
+                <!--button with type class for the type-->
                 <div class="name">Mongrowl</div>
                 
                 
@@ -332,8 +174,8 @@ body {
 
             <!--CARD__DETAILS CLASS TO HOLD THE DETAILS-->
             <div class = "details">
-                <!--Span with type class for the type-->
-                <span class = "fire">Fire</span>        
+                <!--button with type class for the type-->
+                <button class = "fire">Fire</button>        
                 
                 <!--div with Name class for the name of the Pokemon-->
                 <div class="name">Scorchound</div>
@@ -349,9 +191,9 @@ body {
 
             <!--CARD__DETAILS CLASS TO HOLD THE DETAILS-->
             <div class = "details">
-                <!--Span with type class for the type-->
-                <span class = "fire">Fire</span>
-                <span class = "poison">Poison</span>
+                <!--button with type class for the type-->
+                <button class = "fire">Fire</button>
+                <button class = "poison">Poison</button>
         
                 
 
