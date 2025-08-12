@@ -5,41 +5,42 @@ background-color: #D22B2B;
 
 /*FOR NAME*/
 .press-start-2p-regular {
-  font-family: "Press Start 2P", system-ui;
+  font-family: "Press Start 2P";
   font-weight: 460;
   font-style: normal;
 }
 /*FOR ENTRY*/
 .pixelify-sans {
-  font-family: "Pixelify Sans", sans-serif;
+  font-family: "Pixelify Sans";
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
 .vt323-regular {
-  font-family: "VT323", monospace;
+  font-family: "VT323";
   font-weight: 400;
   font-style: normal;
 }
 
 
-
 .row {
   width: 75%;
   margin: auto;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  border-spacing: 25px;
+  border-spacing: 15px 12px;
 }
 
-.card::after, .row::after {
+.container::after, .number::after, 
+.row::after{
   content: "";
   clear: both;
   display: table;
 }
 
-.card{
+
+.container{
     display: table-cell;
     border-radius: 8px;
     border: 3px solid black;
@@ -47,9 +48,18 @@ background-color: #D22B2B;
     justify-content: center;
     align-items: center;
     width: 33.3%;
-    height: auto;
 }
 
+
+.number{
+  display: block;
+  font-family: "Pixelify Sans";
+  color: black;
+  position:absolute;
+  float: left;
+  padding-top: 30px;
+  font-size: 16px;
+}
 
 img{
     object-fit:contain;
@@ -92,57 +102,36 @@ animation: bounce 1s ease-in infinite;
   }
 }
 
-.button {
-    padding: 10px;
-    border-radius: 5px;
-    font-family: Pixelify Sans;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 700;
-}
-
 .grass { 
-    font-family: Pixelify Sans;
+    
     color: white;
     background-color:forestgreen;
     border: 2px solid darkslategrey;
 }
 .rock {
-    font-family: Pixelify Sans;
     background-color:tan;
     border: 2px solid darkgoldenrod;
 }
 .water {
-   font-family: Pixelify Sans; 
     background-color:dodgerblue;
     border: 2px solid darkblue;
 }
 .dragon {
-   font-family: Pixelify Sans;
     color: white;
     background-color: rgb(106, 119, 233);
     border: 2px solid navy;
 }
 
-.fire 
-{   font-family: Pixelify Sans;
+.fire {
     background-color:orangered;
     border: 2px solid firebrick;
 }
 .poison {
-      color: white;
-    font-family: Pixelify Sans;
     background-color:mediumslateblue;
     border: 2px solid indigo;
 }
 
-/*style div elements that have class = to name*/
-.name
-{
-    font-family: "Press Start 2P", sans-serif;
-    font-size:26px;
-    margin-top: 16px;
-}
+
 
 p { 
     font-family: "Pixelify Sans";
@@ -153,8 +142,39 @@ p {
 
 }
 
-.details{
-    font-family: "Pixelify Sans", sans-serif;
-    text-align: center;
-        padding: 16px;
+#entry{
+  align-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  font-family: "Pixelify Sans";
+  text-align: center;
+  padding: 12px;
+  
 }
+
+
+.details{
+  display:grid;
+  }
+
+.number{
+  display: block;
+  font-family: "Press Start 2P";
+  color: black;
+  position: absolute;
+  padding: 2px 5px;
+  margin-top: 2px;
+  font-size: 12px;
+  flex-wrap: wrap;
+
+}
+
+.name{ 
+    justify-self: center;
+    font-family: "Press Start 2P";
+    font-size:26px;
+    margin-top: 16px;
+} 
+
+
+
