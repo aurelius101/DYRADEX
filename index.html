@@ -10,20 +10,46 @@
 </head>
 
 <style>
-.name { 
-    font-family: "Press Start 2P";}
-.details {
+
+div {
+  overflow-y: auto; /*horizontal*/
+  overflow-x: hidden; /*vertical*/
+}
+.name >div { 
+    font-family: "Press Start 2P";
+}
+
+.entry {
+    justify-items: center;
+    align-content: center;
     font-family: Pixelify Sans;
     display: inline-grid;
-    justify-content: center;}
-    
+    justify-content: center;
+    margin:auto}
+ 
+ .row > div{
+    margin: 0 auto;
+    justify-content: center;
+ }   
+
+.container > div{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
 .number::before{ 
     content: url(pokeball\ icon.png) }
 /*POKEMON TYPE*/
+
+
 button {
+    display: flexbox;
+    flex-wrap: wrap;
     font-family: Pixelify Sans;
     border-radius: 5px;
-    margin-top: 12px;
+    margin-top: 15px;
+    justify-content: center;
     text-align: center;
 }
 
@@ -44,18 +70,15 @@ button {
         <div class = "container"> 
             <!--CHEEPIT-->                        
             <div class ="number">001</div>
+            
             <img src = "cheepit-export.png" alt ="Cheepit" = class = bounce >
                             <!--button with type class for the type-->
-        
-           <div id = "entry">
-
+             <div><button class = "grass">GRASS</button></div>
+           <div class = "entry">
                 
-                <div><button class = "grass">GRASS</button></div>
-
                 <div class="name"> Cheepit </div>
-                    
-
                 <p>It uses its rock-hard head to crush nuts and seeds.</p>
+                <p>Insatiably curious, Cheepit will investigate anything that catches its fancy, <br>often destroying it in the process. </p>
                 <p>Its head is heavier than its body, so when it gets too excited, it’s prone to tipping over.</p>
             
             </div>
@@ -67,15 +90,12 @@ button {
         <div class = "container">
             <div class ="number">002</div>
             <img src = "raptanin-export.png" alt ="Raptanin" = class = bounce >
-
-            <!--container__DETAILS CLASS TO HOLD THE DETAILS-->
-            <div id = "entry">
+                <div><button class = "grass">GRASS</button></div>
+            <!--container__entry CLASS TO HOLD THE entry-->
+            <div class = "entry">
 
                 <!--Button with type class for the type-->
-                <div>
-                
-                <button class = "grass">GRASS</button>
-                </div>
+
                 <!--div with Name class for the name of the Pokemon-->
 
                 <div class="name">Raptanin</div>
@@ -89,21 +109,21 @@ button {
          <div class = "container">
             <div class ="number">003</div>
             <img src = "kotylodon-export.png" alt ="Kotylodon" = class = bounce >
-
-            <!--container__DETAILS CLASS TO HOLD THE DETAILS-->
-            <div id = "entry">
-                <!--button with type class for the type-->
-                 <!--Button with type class for the type-->
                 <div>
-                
+
                 <button class = "grass">GRASS</button>
                 <button class = "rock">ROCK</button>
                 </div>
+            <!--container__entry CLASS TO HOLD THE entry-->
+            <div class = "entry">
+                <!--button with type class for the type-->
+                 <!--Button with type class for the type-->
+
                 <!--div with Name class for the name of the Pokemon-->
                 <div class="name">Kotylodon</div>
-                <p>It uses its bright warning plumage in threat display. It frequently picks fights.</p> 
+                <p>It uses its bright warning plumage in threat display.  It frequently picks fights.</p> 
                 <p>It is fiercely territorial and will rip up plants and trees that it perceives to be invading its habitat. 
-                Seeds that fall from its feathers are harder than any known stone.</p> 
+                <br>Seeds that fall from its feathers are harder than any known stone.</p> 
                 
                 
             </div>
@@ -121,19 +141,18 @@ button {
         <div class = "container"> 
             <div class ="number">004</div>
             <img src = "inkle-export.png" alt ="Inkle" = class = floating>
-            
-            <!--container__DETAILS CLASS TO HOLD THE DETAILS-->
-            <div id = "entry">
-                <div>
-                
-                <button class = "water">Water</button>
-                </div>
+            <div><button class = "water">Water</button></div>
+            <!--container__entry CLASS TO HOLD THE entry-->
+            <div class = "entry">
+
                 <!--button with type class for the type-->
                 <div class="name">Inkle</div>
                 
                 
                 <!--div with Name class for the name of the Pokemon-->
-                <p>These Pokémon used to be often seen floating in water in large groups.<br>Large group sightings of these Pokémon may often signify an incoming storm. <br>Inkle are social and bond very quickly with others.</p>
+                <p>These Pokémon used to be often seen floating in water in large groups.
+                Large group sightings of these Pokémon may often signify an incoming storm.</p> 
+                <p>Inkle are social and bond very quickly with others.</p>
             
             </div>
 
@@ -143,17 +162,14 @@ button {
         <div class = "container" >
             <div class ="number">005</div>
             <img src = "jellink-export.png" alt ="Jellink" class = floating>
+            <!--button with type class for the type-->
+            <div><button class = "water">Water</button></div>
+            <!--container__entry CLASS TO HOLD THE entry-->
+            <div class = "entry">
 
-            <!--container__DETAILS CLASS TO HOLD THE DETAILS-->
-            <div id = "entry">
-                <!--button with type class for the type-->
-                <div>
-                <button class = "water">Water</button>
-                </div>        
-                
                 <!--div with Name class for the name of the Pokemon-->
                 <div class="name">Jellink</div>
-                <p>The evolved form of Inkle, these Pokemon are seen much more solitary than Inkle and separate from their groups.</p> 
+                <p>These Pokemon are seen much more solitary than Inkle and separate from their groups.</p> 
                 <p>They walk on their powerful tentacles to seem bigger and more intimidating.</p> 
 
             </div>
@@ -163,14 +179,14 @@ button {
          <div class = "container">
             <div class ="number">006</div>
             <img src = "medumbra-export.png" alt ="Medumbra" class = floating>
-
-            <!--container__DETAILS CLASS TO HOLD THE DETAILS-->
-            <div id = "entry">
-                <!--button with type class for the type-->
                 <div>
                 <button class = "water">Water</button>
                 <button class = "dragon">Dragon</button>
                 </div>
+            <!--container__entry CLASS TO HOLD THE entry-->
+            <div class = "entry">
+                <!--button with type class for the type-->
+
                 <!--div with Name class for the name of the Pokemon-->
                 <div class="name">Medumbra</div>
                 <p>Medumbra are known as aggressive, volatile Pokemon, with their aggression deemed territorial. 
@@ -189,13 +205,12 @@ button {
         <div class = "container"> 
             <div class ="number">007</div>
             <img src = "mongrowl-export.png" alt ="Mongrowl"= class = bounce  >
-   
-
-            <!--container__DETAILS CLASS TO HOLD THE DETAILS-->
-            <div id = "entry">
-                <div class = button>
-                <button class = "fire">Fire</button>
-                </div>
+            <div class = button>  <button class = "fire">Fire</button></div>
+                            
+                        
+            <!--container__entry CLASS TO HOLD THE entry-->
+            <div class = "entry">
+                
                 <!--button with type class for the type-->
                 <div class="name">Mongrowl</div>
                 
@@ -211,13 +226,10 @@ button {
         <div class = "container">
             <div class ="number">008</div>
             <img src = "scorchound-export.png" alt ="Scorchound" = class = bounce >
+            <div class = button>  <button class = "fire">Fire</button></div>
+            <!--container__entry CLASS TO HOLD THE entry-->
+            <div class = "entry">
 
-            <!--container__DETAILS CLASS TO HOLD THE DETAILS-->
-            <div id = "entry">
-                <!--button with type class for the type-->
-                <div>
-                <button class = "fire">Fire</button>        
-                </div>
                 <!--div with Name class for the name of the Pokemon-->
                 <div class="name">Scorchound</div>
                 <p>As Scorchound matures, it displays erratic and aggressive behaviour. Its own tail begins vaguely resembling a serpent as it gains its own separate conscience.</p>
@@ -230,14 +242,14 @@ button {
          <div class = "container">
             <div class ="number">009</div>
             <img src = "howlfire-export.png" alt ="Howlfire" = class = bounce >
-
-            <!--container__DETAILS CLASS TO HOLD THE DETAILS-->
-            <div id = "entry">
+            <div class = "button">
+            <button class = "fire">Fire</button>
+            <button class = "poison">Poison</button>
+            </div>
+            <!--container__entry CLASS TO HOLD THE entry-->
+            <div class = "entry">
                 <!--button with type class for the type-->
-                <div class = "button">
-                <button class = "fire">Fire</button>
-                <button class = "poison">Poison</button>
-                </div>
+                
                 
 
                 <!--div with Name class for the name of the Pokemon-->

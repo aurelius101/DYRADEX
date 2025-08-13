@@ -25,46 +25,60 @@ background-color: #D22B2B;
 
 
 .row {
+  display: flex;
   width: 75%;
   margin: auto;
+  margin-top: 20px;
+  column-gap: 20px;
+  margin-block-end: 20px;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   border-spacing: 15px 12px;
+ 
+
 }
 
-.container::after, .number::after, 
 .row::after{
   content: "";
   clear: both;
-  display: table;
+  display: flex;
+  margin: auto;
 }
 
 
 .container{
-    display: table-cell;
+    display: flexbox;
+    width: 50%;
+    padding-block-end: 2%;
+    max-height: 460px;
+    margin: 10px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
     border-radius: 8px;
     border: 3px solid black;
     background-color: white;
-    justify-content: center;
-    align-items: center;
-    width: 33.3%;
+    text-align: center;
+    flex-wrap: wrap;
+
 }
 
 
+
 .number{
-  display: block;
-  font-family: "Pixelify Sans";
+  justify-self: flex-start;
+  font-family: "Press Start 2P";
   color: black;
-  position:absolute;
-  float: left;
-  padding-top: 30px;
-  font-size: 16px;
+  position: absolute;
+  padding: 2px 5px;
+  margin-top: 2px;
+  font-size: 12px;
+  flex-wrap: wrap;
 }
 
 img{
     object-fit:contain;
     height: 125px;
-    width: 100%;
 }
 
 .floating{
@@ -93,15 +107,18 @@ img{
  }
 
  .bounce{
-animation: bounce 1s ease-in infinite;
+animation: bounce 0.8s ease infinite;
+
 }
 
-@keyframes bounce {
+@keyframes bounce{
   50% {
-     transform: translateY(-3px);
+    transform: translateY( -5px) scaleX( 0.95 ) scaleY( 1.03 );
   }
-}
-
+  0%,100% {
+    transform: scaleX( 1 ) scaleY( 1 );}
+  }
+/*TYPES*/
 .grass { 
     
     color: white;
@@ -138,42 +155,31 @@ p {
     text-align: center;
     font-size: 14px;
     color: brown;
-    line-height: 150%;
+    margin: 5px;
 
 }
 
-#entry{
-  align-content: space-evenly;
-  align-items: center;
-  list-style-type: none;
+
+.entry{
+  display:flexbox;
+  justify-content: center;
+  align-content: center;
   font-family: "Pixelify Sans";
   text-align: center;
-  padding: 12px;
-  
-}
-
-
-.details{
-  display:grid;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
   }
 
-.number{
-  display: block;
-  font-family: "Press Start 2P";
-  color: black;
-  position: absolute;
-  padding: 2px 5px;
-  margin-top: 2px;
-  font-size: 12px;
-  flex-wrap: wrap;
-
-}
 
 .name{ 
+    display: flex;
+    align-self: center;
     justify-self: center;
     font-family: "Press Start 2P";
+    margin-top: 5px;
+    margin-bottom: 5px;
     font-size:26px;
-    margin-top: 16px;
 } 
 
 
