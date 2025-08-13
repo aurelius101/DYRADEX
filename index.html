@@ -23,6 +23,7 @@
     }
 .pokeball:hover{
     .pokemon, .circle{opacity: 1;}
+    align-items: center;
     transform: translateY(-8px) scale(1.2);
      transition: 0.3s ease-in-out;
 
@@ -50,7 +51,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-     text-align: center;
     margin:auto;
     opacity: 0;
     transition: .3s ease;
@@ -64,6 +64,8 @@
   font-weight: 2;
   font-style: normal;
   text-align : center;
+  margin:auto;
+  justify-content: center;
   opacity : 0;
   transition : 0.3s ease-in-out;
 }
@@ -107,22 +109,24 @@
 
 h2{text-align: center;
 color: white;}
+
 .press-start-2p-regular {
   font-family: "Press Start 2P";
   font-weight: 50;
   font-style: normal;
 }
 
-.p{font-size: 12;}
+.p{
+    text-align: center;
+    font-size: 10;}
+    
     .grass{
-        color:#99cc00
-;
+        color:#99cc00;
     }
 
     .water{color:#1a75ff}
 
     .fire{color: #ff1a1a;}
-
 
 body{text-align: center;
 background-color: seagreen;
@@ -147,30 +151,32 @@ font-style: normal;
                 <p class = grass>Seedling Pokemon</p>
             </div>
         </div>
-        <div class = "pokemon"><a href="index.html"><img src="cheepit-export.png" class = bounce></a>
+        <div class = "pokemon"><a href="pokedex.html"><img src="cheepit-export.png" class = bounce></a>
          </div>
     </div>
 
     <!--INKLE-->
-    <div>
 
     <div class = "pokeball"><img src="pokeball1.png" class = Shake>
-                <div>
+        <div>
             <div class = content>
                 <p class = water>Inkle</p>
                 <p class = water>Ink Pokemon</p>
             </div>
         </div>
-    <div class="pokemon"><a href="index.html"><img src="inkle-export.png" class = bounce></a></div>
+     <div class="pokemon"><a href="pokedex.html"><img src="inkle-export.png" class = bounce></a></div>
     </div> 
-    </div>
+
     <!--MONGROWL-->
-    <div class ="pokeball"><img src="pokeball1.png" class = Shake></a>
-         <div class = content>
+       <div class = "pokeball"><img src="pokeball1.png" class = Shake>
+        <div>
+            <div class = content>
                 <p class = fire>Mongrowl</p>
-                <p class = fire>Fire Pup</p>
+                <p class = fire>Fire Puppy</p>
             </div>
-    <div class="pokemon"><a href="index.html"><img src="mongrowl-export.png" class= bounce></a></div>
+        </div>
+        <div class = "pokemon"><a href="pokedex.html"><img src="mongrowl-export.png" class = bounce></a>
+         </div>
     </div>
 </div>
 </body>
