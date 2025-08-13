@@ -1,265 +1,177 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang ="en">
 <head>
-<link rel ="stylesheet" href="stylesheet.css">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=VT323&display=swap');
 </style>
 
-</head>
-
 <style>
 
-div {
-  overflow-y: auto; /*horizontal*/
-  overflow-x: hidden; /*vertical*/
-}
-.name >div { 
-    font-family: "Press Start 2P";
+.container{
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: aliceblue;
 }
 
-.entry {
-    justify-items: center;
-    align-content: center;
-    font-family: Pixelify Sans;
-    display: inline-grid;
-    justify-content: center;
-    margin:auto}
+
+.pokeball{
+    position: relative;
+    justify-self: center;
+    margin: center; 
+    }
+.pokeball:hover{
+    .pokemon, .circle{opacity: 1;}
+    transform: translateY(-8px) scale(1.2);
+     transition: 0.3s ease-in-out;
+
+}
+.pokeball{
+    margin-inline: 50px;
+}
+.circle {
+    top: 20%;
+    position: absolute;
+    justify-self: center;
+    margin: center; 
+    margin-inline: 50px;
+    height: 150px;
+    width: 150px;
+    background-color: rgb(98, 155, 124);
+    border-radius: 50%;
+    opacity: 1;
+    transition: .3s ease;
+}
+.pokemon{
+    position: absolute;
+    justify-self: center;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+     text-align: center;
+    margin:auto;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+
+.container .pokeball .content {
+  position : absolute;
+  top : 100%;
+  font-family: Press Start 2P;
+  font-weight: 2;
+  font-style: normal;
+  text-align : center;
+  opacity : 0;
+  transition : 0.3s ease-in-out;
+}
+
+.container .pokeball:hover .content {
+   margin-bottom : 10px;
+   opacity : 1;
+   transition-delay: 0.2s;
+  
+}
+
+
+/*ANIMATION*/
+
+.bounce {
+      animation: bounce 0.8s ease infinite;
+    }
  
- .row > div{
-    margin: 0 auto;
-    justify-content: center;
- }   
-
-.container > div{
-    display: flexbox;
-    justify-content: center;
-    align-items: center;
+@keyframes bounce {
+  0%,100% {
+    transform: translateY(-5%) scaleX( 1 ) scaleY( 1 );
+    }
+    50%{
+         transform: translateY(0%) scaleX( 0.95 ) scaleY( 1.03 );
+  }
 }
 
-.number::before{ 
-    content: url(pokeball\ icon.png) }
-/*POKEMON TYPE*/
-
-
-button {
-    display: flexbox;
-    flex-wrap: wrap;
-    font-family: Pixelify Sans;
-    border-radius: 5px;
-    margin-top: 15px;
-    justify-content: center;
-    text-align: center;
+.Shake{
+    animation: 3s Shake infinite;
+     transform-origin: 75px 100px
+}
+@keyframes Shake{
+    0%   {left:-30px; transform: rotate(0deg)}
+    2%  {left:-25px; transform: rotate(20deg)}
+    4%  {left:-30px; transform: rotate(0deg)}
+    6%  {left:-35px; transform: rotate(-20deg)}
+    8%  {left:-30px; transform: rotate(0deg)}
+    100% {left:-30px; transform: rotate(0deg)}
 }
 
 
+h2{text-align: center;
+color: white;}
+.press-start-2p-regular {
+  font-family: "Press Start 2P";
+  font-weight: 50;
+  font-style: normal;
+}
 
+.p{font-size: 12;}
+    .grass{
+        color:#99cc00
+;
+    }
+
+    .water{color:#1a75ff}
+
+    .fire{color: #ff1a1a;}
+
+
+body{text-align: center;
+background-color: seagreen;
+font-family: "Press Start 2P";
+font-style: normal;
+}
 </style>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>POKEDEX</title>
+</head>
 
 <body>
-    
-    <!--ROW ID TO HOLD THE container-->
-<div class = "row" >
 
-        <!--container CLASS FOR THE container-->
-        <div class = "container"> 
-            <!--CHEEPIT-->                        
-            <div class ="number">001</div>
-            
-            <img src = "cheepit-export.png" alt ="Cheepit" = class = bounce >
-                            <!--button with type class for the type-->
-             <div><button class = "grass">GRASS</button></div>
-           <div class = "entry">
-                
-                <div class="name"> Cheepit </div>
-                <p>It uses its rock-hard head to crush nuts and seeds.</p>
-                <p>Insatiably curious, Cheepit will investigate anything that catches its fancy, <br>often destroying it in the process. </p>
-                <p>Its head is heavier than its body, so when it gets too excited, it’s prone to tipping over.</p>
-            
+<h2>CHOOSE YOUR STARTER</h2>
+
+
+<div class = "container">
+   <!--CHEEPIT-->
+
+    <div class = "pokeball"><img src="pokeball1.png" class = Shake>
+        <div>
+            <div class = content>
+                <p class = grass>Cheepit</p>
+                <p class = grass>Seedling Pokemon</p>
             </div>
-
         </div>
+        <div class = "pokemon"><a href="index.html"><img src="cheepit-export.png" class = bounce></a>
+         </div>
+    </div>
 
- <!--RAPTANIN-->       
+    <!--INKLE-->
+    <div>
 
-        <div class = "container">
-            <div class ="number">002</div>
-            <img src = "raptanin-export.png" alt ="Raptanin" = class = bounce >
-                <div><button class = "grass">GRASS</button></div>
-            <!--container__entry CLASS TO HOLD THE entry-->
-            <div class = "entry">
-
-                <!--Button with type class for the type-->
-
-                <!--div with Name class for the name of the Pokemon-->
-
-                <div class="name">Raptanin</div>
-                <p>These Pokemon have a rebellious streak and will challenge their own trainer to a battle if riled up.</p> 
-                <p>In the wild, flock hierarchy is determined by whichever individual has the most impressive crest.</p>
-                
-            </div>
-
-        </div>
- <!--KOTYLODON-->       
-         <div class = "container">
-            <div class ="number">003</div>
-            <img src = "kotylodon-export.png" alt ="Kotylodon" = class = bounce >
+    <div class = "pokeball"><img src="pokeball1.png" class = Shake>
                 <div>
-
-                <button class = "grass">GRASS</button>
-                <button class = "rock">ROCK</button>
-                </div>
-            <!--container__entry CLASS TO HOLD THE entry-->
-            <div class = "entry">
-                <!--button with type class for the type-->
-                 <!--Button with type class for the type-->
-
-                <!--div with Name class for the name of the Pokemon-->
-                <div class="name">Kotylodon</div>
-                <p>It uses its bright warning plumage in threat display.  It frequently picks fights.</p> 
-                <p>It is fiercely territorial and will rip up plants and trees that it perceives to be invading its habitat. 
-                <br>Seeds that fall from its feathers are harder than any known stone.</p> 
-                
-                
+            <div class = content>
+                <p class = water>Inkle</p>
+                <p class = water>Ink Pokemon</p>
             </div>
-
-
         </div>
-
+    <div class="pokemon"><a href="index.html"><img src="inkle-export.png" class = bounce></a></div>
+    </div> 
+    </div>
+    <!--MONGROWL-->
+    <div class ="pokeball"><img src="pokeball1.png" class = Shake></a>
+         <div class = content>
+                <p class = fire>Mongrowl</p>
+                <p class = fire>Fire Pup</p>
+            </div>
+    <div class="pokemon"><a href="index.html"><img src="mongrowl-export.png" class= bounce></a></div>
+    </div>
 </div>
-
-<div>
-<div class = "row" >
-
-        <!--container CLASS FOR THE container-->
- <!--INKLE-->       
-        <div class = "container"> 
-            <div class ="number">004</div>
-            <img src = "inkle-export.png" alt ="Inkle" = class = floating>
-            <div><button class = "water">Water</button></div>
-            <!--container__entry CLASS TO HOLD THE entry-->
-            <div class = "entry">
-
-                <!--button with type class for the type-->
-                <div class="name">Inkle</div>
-                
-                
-                <!--div with Name class for the name of the Pokemon-->
-                <p>These Pokémon used to be often seen floating in water in large groups.
-                Large group sightings of these Pokémon may often signify an incoming storm.</p> 
-                <p>Inkle are social and bond very quickly with others.</p>
-            
-            </div>
-
-        </div>
- <!--JELLINK-->       
-        <!--container CLASS FOR THE container-->
-        <div class = "container" >
-            <div class ="number">005</div>
-            <img src = "jellink-export.png" alt ="Jellink" class = floating>
-            <!--button with type class for the type-->
-            <div><button class = "water">Water</button></div>
-            <!--container__entry CLASS TO HOLD THE entry-->
-            <div class = "entry">
-
-                <!--div with Name class for the name of the Pokemon-->
-                <div class="name">Jellink</div>
-                <p>These Pokemon are seen much more solitary than Inkle and separate from their groups.</p> 
-                <p>They walk on their powerful tentacles to seem bigger and more intimidating.</p> 
-
-            </div>
-
-        </div>
- <!--MEDUMBRA-->       
-         <div class = "container">
-            <div class ="number">006</div>
-            <img src = "medumbra-export.png" alt ="Medumbra" class = floating>
-                <div>
-                <button class = "water">Water</button>
-                <button class = "dragon">Dragon</button>
-                </div>
-            <!--container__entry CLASS TO HOLD THE entry-->
-            <div class = "entry">
-                <!--button with type class for the type-->
-
-                <!--div with Name class for the name of the Pokemon-->
-                <div class="name">Medumbra</div>
-                <p>Medumbra are known as aggressive, volatile Pokemon, with their aggression deemed territorial. 
-                They are solitary, much like Jellinks, and pack a powerful punch.</p>
-                <p>These Pokemon can "float" for small periods of time.</p>                 
-                
-            </div>
-            </div>
-
-</div>
-
-<div>
-<div class = "row" >
-
- <!--MONGROWL-->       
-        <div class = "container"> 
-            <div class ="number">007</div>
-            <img src = "mongrowl-export.png" alt ="Mongrowl"= class = bounce  >
-            <div class = button>  <button class = "fire">Fire</button></div>
-                            
-                        
-            <!--container__entry CLASS TO HOLD THE entry-->
-            <div class = "entry">
-                
-                <!--button with type class for the type-->
-                <div class="name">Mongrowl</div>
-                
-                
-                <!--div with Name class for the name of the Pokemon-->
-                <p>It disperses heat through its large ears. <br>The intensity and heat of the flames indicate Mongrowl’s emotions.</p>
-                <p>Its flames never goes out, just like its loyalty.</p>
-            
-            </div>
-
-        </div>
- <!--SCORCHOUND-->       
-        <div class = "container">
-            <div class ="number">008</div>
-            <img src = "scorchound-export.png" alt ="Scorchound" = class = bounce >
-            <div class = button>  <button class = "fire">Fire</button></div>
-            <!--container__entry CLASS TO HOLD THE entry-->
-            <div class = "entry">
-
-                <!--div with Name class for the name of the Pokemon-->
-                <div class="name">Scorchound</div>
-                <p>As Scorchound matures, it displays erratic and aggressive behaviour. Its own tail begins vaguely resembling a serpent as it gains its own separate conscience.</p>
-                <p>Scorchound will often seek solitude, afraid of accidentally harming its Trainer.</p> 
-
-            </div>
-
-        </div>
- <!--HOWLLFIRE-->       
-         <div class = "container">
-            <div class ="number">009</div>
-            <img src = "howlfire-export.png" alt ="Howlfire" = class = bounce >
-            <div class = "button">
-            <button class = "fire">Fire</button>
-            <button class = "poison">Poison</button>
-            </div>
-            <!--container__entry CLASS TO HOLD THE entry-->
-            <div class = "entry">
-                <!--button with type class for the type-->
-                
-                
-
-                <!--div with Name class for the name of the Pokemon-->
-                <div class="name">Howlfire</div>
-                <p>Despite the intense and dangerous appearance of its flames, Howlfire has it under control.</p>
-                <p>The more close it is with its Trainer, the hotter its flames burn.</p>                 
-
-            </div>
-            </div>
-</div>
-
 </body>
 </html>
