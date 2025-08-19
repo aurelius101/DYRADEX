@@ -40,15 +40,18 @@ div {
 
 .number::before{ 
     content: url(pokeball\ icon.png) }
-/*POKEMON TYPE*/
+/*Pokémon TYPE*/
 
 
 button {
+    font-size: 1rem;
+    color: white;
     display: flexbox;
     flex-wrap: wrap;
     font-family: Pixelify Sans;
+    height: 2em;
     border-radius: 5px;
-    margin-top: 15px;
+    margin-top: 12px;
     justify-content: center;
     text-align: center;
 }
@@ -63,7 +66,8 @@ button {
 
 <body>
     
-    <!--ROW ID TO HOLD THE container-->
+
+<!--GRASS STARTER LINE-->
 <div class = "row" >
 
         <!--container CLASS FOR THE container-->
@@ -77,8 +81,9 @@ button {
            <div class = "entry">
                 
                 <div class="name"> Cheepit </div>
+                <div class = "category">Seedling Pokémon</div>
                 <p>It uses its rock-hard head to crush nuts and seeds.</p>
-                <p>Insatiably curious, Cheepit will investigate anything that catches its fancy, <br>often destroying it in the process. </p>
+                <p>Insatiably curious, Cheepit will investigate anything that catches its fancy, often destroying it in the process. </p>
                 <p>Its head is heavier than its body, so when it gets too excited, it’s prone to tipping over.</p>
             
             </div>
@@ -96,10 +101,11 @@ button {
 
                 <!--Button with type class for the type-->
 
-                <!--div with Name class for the name of the Pokemon-->
+                <!--div with Name class for the name of the Pokémon-->
 
                 <div class="name">Raptanin</div>
-                <p>These Pokemon have a rebellious streak and will challenge their own trainer to a battle if riled up.</p> 
+                <div class ="category">Sprout Fowl Pokémon</div>
+                <p>These Pokémon have a rebellious streak and will challenge their own trainer to a battle if riled up.</p> 
                 <p>In the wild, flock hierarchy is determined by whichever individual has the most impressive crest.</p>
                 
             </div>
@@ -119,38 +125,35 @@ button {
                 <!--button with type class for the type-->
                  <!--Button with type class for the type-->
 
-                <!--div with Name class for the name of the Pokemon-->
+                <!--div with Name class for the name of the Pokémon-->
                 <div class="name">Kotylodon</div>
+                <div class ="category">Tyrant Pokémon</div>
                 <p>It uses its bright warning plumage in threat display.  It frequently picks fights.</p> 
                 <p>It is fiercely territorial and will rip up plants and trees that it perceives to be invading its habitat. 
                 <br>Seeds that fall from its feathers are harder than any known stone.</p> 
                 
                 
             </div>
-
-
         </div>
-
 </div>
 
-<div>
+<!--WATER STARTER LINE-->
 <div class = "row" >
 
         <!--container CLASS FOR THE container-->
  <!--INKLE-->       
         <div class = "container"> 
             <div class ="number">004</div>
-            <img src = "inkle-export.png" alt ="Inkle" = class = floating>
-            <div><button class = "water">Water</button></div>
+            <img src = "inkle-export.png" alt ="Inkle" = class = float>
+            <div><button class = "water">WATER</button></div>
             <!--container__entry CLASS TO HOLD THE entry-->
             <div class = "entry">
 
                 <!--button with type class for the type-->
                 <div class="name">Inkle</div>
-                
-                
-                <!--div with Name class for the name of the Pokemon-->
-                <p>These Pokémon used to be often seen floating in water in large groups.
+                <div class ="category">Ink Pokémon</div>
+                <!--div with Name class for the name of the Pokémon-->
+                <p>These Pokémon used to be often seen float in water in large groups.
                 Large group sightings of these Pokémon may often signify an incoming storm.</p> 
                 <p>Inkle are social and bond very quickly with others.</p>
             
@@ -161,15 +164,16 @@ button {
         <!--container CLASS FOR THE container-->
         <div class = "container" >
             <div class ="number">005</div>
-            <img src = "jellink-export.png" alt ="Jellink" class = floating>
+            <img src = "jellink-export.png" alt ="Jellink" class = float>
             <!--button with type class for the type-->
-            <div><button class = "water">Water</button></div>
+            <div><button class = "water">WATER</button></div>
             <!--container__entry CLASS TO HOLD THE entry-->
             <div class = "entry">
 
-                <!--div with Name class for the name of the Pokemon-->
+                <!--div with Name class for the name of the Pokémon-->
                 <div class="name">Jellink</div>
-                <p>These Pokemon are seen much more solitary than Inkle and separate from their groups.</p> 
+                <div class ="category">Jellyfish Pokémon</div>
+                <p>These Pokémon are seen much more solitary than Inkle and separate from their groups.</p> 
                 <p>They walk on their powerful tentacles to seem bigger and more intimidating.</p> 
 
             </div>
@@ -178,34 +182,35 @@ button {
  <!--MEDUMBRA-->       
          <div class = "container">
             <div class ="number">006</div>
-            <img src = "medumbra-export.png" alt ="Medumbra" class = floating>
+            <img src = "medumbra-export.png" alt ="Medumbra" class = float>
                 <div>
-                <button class = "water">Water</button>
-                <button class = "dragon">Dragon</button>
+                <button class = "water">WATER</button>
+                <button class = "dragon">DRAGON</button>
                 </div>
             <!--container__entry CLASS TO HOLD THE entry-->
             <div class = "entry">
                 <!--button with type class for the type-->
 
-                <!--div with Name class for the name of the Pokemon-->
+                <!--div with Name class for the name of the Pokémon-->
                 <div class="name">Medumbra</div>
-                <p>Medumbra are known as aggressive, volatile Pokemon, with their aggression deemed territorial. 
+                <div class ="category">Aggressor Pokémon</div>
+                <p>Medumbra are known as aggressive, volatile Pokémon, with their aggression deemed territorial. 
                 They are solitary, much like Jellinks, and pack a powerful punch.</p>
-                <p>These Pokemon can "float" for small periods of time.</p>                 
+                <p>These Pokémon can "float" for small periods of time.</p>                 
                 
             </div>
             </div>
 
 </div>
 
-<div>
-<div class = "row" >
+<!--FIRE STARTER LINE-->
+<div class = "row"">
 
  <!--MONGROWL-->       
         <div class = "container"> 
             <div class ="number">007</div>
             <img src = "mongrowl-export.png" alt ="Mongrowl"= class = bounce  >
-            <div class = button>  <button class = "fire">Fire</button></div>
+            <div class = button>  <button class = "fire">FIRE</button></div>
                             
                         
             <!--container__entry CLASS TO HOLD THE entry-->
@@ -213,9 +218,10 @@ button {
                 
                 <!--button with type class for the type-->
                 <div class="name">Mongrowl</div>
+                <div class ="category">Puppy Pokémon</div>
                 
                 
-                <!--div with Name class for the name of the Pokemon-->
+                <!--div with Name class for the name of the Pokémon-->
                 <p>It disperses heat through its large ears. <br>The intensity and heat of the flames indicate Mongrowl’s emotions.</p>
                 <p>Its flames never goes out, just like its loyalty.</p>
             
@@ -226,14 +232,15 @@ button {
         <div class = "container">
             <div class ="number">008</div>
             <img src = "scorchound-export.png" alt ="Scorchound" = class = bounce >
-            <div class = button>  <button class = "fire">Fire</button></div>
+            <div class = button>  <button class = "fire">FIRE</button></div>
             <!--container__entry CLASS TO HOLD THE entry-->
             <div class = "entry">
 
-                <!--div with Name class for the name of the Pokemon-->
+                <!--div with Name class for the name of the Pokémon-->
                 <div class="name">Scorchound</div>
-                <p>As Scorchound matures, it displays erratic and aggressive behaviour. Its own tail begins vaguely resembling a serpent as it gains its own separate conscience.</p>
-                <p>Scorchound will often seek solitude, afraid of accidentally harming its Trainer.</p> 
+                <div class ="category">Blaze Pokémon</div>
+                <p>As Scorchound grows, it displays erratic and aggressive behaviour. Its own tail begins resembling a serpent and gains its own separate conscience.</p>
+                <p>It will often seek solitude, afraid of accidentally harming its trainer.</p> 
 
             </div>
 
@@ -243,7 +250,7 @@ button {
             <div class ="number">009</div>
             <img src = "howlfire-export.png" alt ="Howlfire" = class = bounce >
             <div class = "button">
-            <button class = "fire">Fire</button>
+            <button class = "fire">FIRE</button>
             <button class = "poison">Poison</button>
             </div>
             <!--container__entry CLASS TO HOLD THE entry-->
@@ -252,14 +259,224 @@ button {
                 
                 
 
-                <!--div with Name class for the name of the Pokemon-->
+                <!--div with Name class for the name of the Pokémon-->
                 <div class="name">Howlfire</div>
+                <div class ="category">Inferno</div>
                 <p>Despite the intense and dangerous appearance of its flames, Howlfire has it under control.</p>
                 <p>The more close it is with its Trainer, the hotter its flames burn.</p>                 
 
             </div>
             </div>
+
+
+
 </div>
+<!--SEARPENT, BEGINNER BUG-->
+<div class = "row">
+   <div class = "container">
+            <div class ="number">010</div>
+
+            <img src = "mystery.png" alt ="unknown" = class = heartBeat >
+                <div>
+                <button class = "unknown">???</button>
+                </div>
+            <!--container__entry CLASS TO HOLD THE entry-->
+            <div class = "entry">
+                <div class="name">???</div>
+            <p class = "gray"> There is no information about this Pokémon...yet.</p>
+                
+            </div>
+
+
+    </div>
+
+
+
+
+    <!--WEEBLER-->
+   <div class = "container">
+            <div class ="number">011</div>
+
+            <img src = "weebler.png" alt ="Weebler" = class = swing >
+                <div>
+                <button class = "bug">BUG</button>
+                <button class = "flying">FLYING</button>
+                </div>
+            <!--container__entry CLASS TO HOLD THE entry-->
+            <div class = "entry">
+                <div class="name">Weebler</div>
+                <div class ="category">Diffuser Pokémon</div>
+                <p>It gives off the scent of whatever berries it has eaten through the vent on its back. 
+                <br>When it feels threatened, it will expel a great gust of wind to blow itself away from danger.</p>  
+                
+            </div>
+
+
+    </div>
+    <!--PUFFABUG-->
+     <div class = "container">
+            <div class ="number">012</div>
+            <img src = "puffabug.png" alt ="Puffabug" = class = bounce >
+                <div>
+
+                <button class = "bug">BUG</button>
+                <button class = "flying">FLYING</button>
+                </div>
+            <!--container__entry CLASS TO HOLD THE entry-->
+            <div class = "entry">
+                <!--button with type class for the type-->
+                 <!--Button with type class for the type-->
+
+                <!--div with Name class for the name of the Pokémon-->
+                <div class="name">Puffabug</div>
+                <div class ="category">Purifier Pokémon</div>
+                <p>By expanding their bodies, they can take in vast amounts of air at once.</p>
+                 <p>They feed off of pollutant particles and expel filtered air from their thoracic tubes.</p> 
+                <p>The filtration process they utilize to feed results in an ambient, musical tooting that fills the forests they inhabit.</p>
+                
+            </div>
+
+
+    </div>
+
+
+
+</div>
+
+<!--FINTASM, PHANTOLM-->
+<div class = "row">
+   <div class = "container">
+            <div class ="number">???</div>
+
+            <img src = "mystery.png" alt ="unknown" = class = heartBeat >
+                <div>
+                <button class = "unknown">???</button>
+                </div>
+            <!--container__entry CLASS TO HOLD THE entry-->
+            <div class = "entry">
+                <div class="name">???</div>
+            <p class = "gray"> There is no information about this Pokémon...yet.</p>
+                
+            </div>
+
+
+    </div>
+
+    <!--FINTASM-->
+   <div class = "container">
+            <div class ="number">???</div>
+
+            <img src = "fintasm-export.png" alt ="Fintasm" = class = float >
+                <div>
+                <button class = "water">WATER</button>
+                <button class = "ghost">GHOST</button>
+                </div>
+            <!--container__entry CLASS TO HOLD THE entry-->
+            <div class = "entry">
+                <div class="name">Fintasm</div>
+                <div class ="category">Cave Fish Pokémon</div>
+                <p>It is said that the first Fintasm was reborn from a young child who lost their life to the underground Chamomillian lakes.</p> 
+                <p>Its other senses have developed to compensate for its lack of sight. It can sense a pin drop from miles away.</p>
+                
+            </div>
+
+
+    </div>
+    <!--PHANTOLM-->
+     <div class = "container">
+            <div class ="number">???</div>
+            <img src = "phantolm-export.png" alt ="Phantolm" = class = float >
+                <div>
+                 <!--Button with type class for the type-->
+                <button class = "water">WATER</button>
+                <button class = "ghost">GHOST</button>
+                </div>
+            <!--container__entry CLASS TO HOLD THE entry-->
+            <div class = "entry">
+                <div class="name">Phantolm</div>
+                <div class ="category">Blind Newt Pokémon</div>
+                <p>lorem ipsum dolor</p>
+                
+            </div>
+
+
+    </div>
+
+
+
+</div>
+
+<!--PSEUDOLEGENDARY ORCA LINE-->
+<div class = "row" >
+
+        <!--container CLASS FOR THE container-->
+ <!--KILIBYE-->       
+        <div class = "container"> 
+            <div class ="number">???</div>
+            <img src = "kilibye-export.png" alt ="Kilibye" = class = bounce>
+            <div><button class = "water">WATER</button></div>
+            <!--container__entry CLASS TO HOLD THE entry-->
+            <div class = "entry">
+
+                <!--button with type class for the type-->
+                <div class="name">Kilibye</div>
+                <div class ="category">Lure Pokémon</div>
+                <!--div with Name class for the name of the Pokémon-->
+                <p>It draws in would-be predators with faux tears, then fiercely attacks.</p>
+                <p>Wherever this Pokémon dwells, there are sure to be Orvakil nearby. It often acts as bait to attract large prey to its pod.</p>
+            
+            </div>
+
+        </div>
+ <!--ORCALLOUS-->       
+        <!--container CLASS FOR THE container-->
+        <div class = "container" >
+            <div class ="number">???</div>
+            <img src = "orcallous-export.png" alt ="Ocrallous" class = bounce>
+            <!--button with type class for the type-->
+            <div><button class = "water">WATER</button>
+                <button class = "dark">DARK</button></div>
+            <!--container__entry CLASS TO HOLD THE entry-->
+            <div class = "entry">
+
+                <!--div with Name class for the name of the Pokémon-->
+                <div class="name">Orcallous</div>
+                <div class ="category">Spite Pokémon</div>
+                <p>It’s small but spiteful.</p>
+                <p>It picks fights against larger opponents that would hassle it, and what it lacks in strength, it makes up for in tenacity.</p> 
+                <p>It’s grown agile and aggressive. </p>
+
+            </div>
+
+        </div>
+
+ <!--ORVAKILL-->       
+         <div class = "container">
+            <div class ="number">???</div>
+            <img src = "orvakil-export.png" alt ="Orvakill" class = bounce>
+                <div>
+                <button class = "water">WATER</button>
+                <button class = "dark">DARK</button>
+                </div>
+            <!--container__entry CLASS TO HOLD THE entry-->
+            <div class = "entry">
+                <!--button with type class for the type-->
+
+                <!--div with Name class for the name of the Pokémon-->
+                <div class="name">Orvakill</div>
+                <div class ="category">Vengeance Pokémon</div>
+                <p>Its body is covered in scars from wars waged at sea.
+                <br>It is ruthless and vengeful, targeting those that had picked on it in its younger days.</p>
+                <p>Despite appearances, it is an honourable Pokémon that only attacks those it has sworn vengeance upon.</p>            
+                
+            </div>
+            </div>
+
+</div>
+
+
+
+
 
 </body>
 </html>

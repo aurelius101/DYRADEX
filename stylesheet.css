@@ -1,3 +1,4 @@
+@import "animations.css";
 body{
 background-color: #D22B2B;
 
@@ -26,7 +27,7 @@ background-color: #D22B2B;
 
 .row {
   display: flex;
-  width: 75%;
+  width: 65%;
   margin: auto;
   margin-top: 20px;
   column-gap: 20px;
@@ -48,9 +49,10 @@ background-color: #D22B2B;
 
 .container{
     display: flexbox;
-    width: 50%;
+    width: 360px;
     padding-block-end: 2%;
-    max-height: 460px;
+    min-height: 420px;
+    max-height: 465px;
     margin: 10px;
     align-items: center;
     flex-direction: row;
@@ -62,8 +64,6 @@ background-color: #D22B2B;
     flex-wrap: wrap;
 
 }
-
-
 
 .number{
   justify-self: flex-start;
@@ -77,88 +77,99 @@ background-color: #D22B2B;
 }
 
 img{
-    object-fit:contain;
-    height: 125px;
+    object-fit: scale-down;
+    width: 150px;
+    height: 150px;
 }
 
-.floating{
-    animation: float 10s infinite linear;
-    object-fit:contain;
-    height: 125px;
-    width: 100%;
-    }
 
- @keyframes float {
-  0% {
-    transform: rotate(0deg) translate(0, 0);
-  }
-  25% {
-    transform: rotate(10deg) translate(20px, 3px);
-  }
-  50% {
-    transform: rotate(-10deg) translate(-3px, 13px);
-  }
-  75% {
-    transform: rotate(8deg) translate(-16px, -10px);
-  }
-  100% {
-    transform: rotate(0deg) translate(0, 0);
-  }
- }
-
- .bounce{
-animation: bounce 0.8s ease infinite;
-
-}
-
-@keyframes bounce{
-  50% {
-    transform: translateY( -5px) scaleX( 0.95 ) scaleY( 1.03 );
-  }
-  0%,100% {
-    transform: scaleX( 1 ) scaleY( 1 );}
-  }
 /*TYPES*/
+
+.unknown {
+  background-color: #68A090;
+  border: 2px solid #44685E;
+}
+
 .grass { 
-    
-    color: white;
-    background-color:forestgreen;
-    border: 2px solid darkslategrey;
+    background-color:#3FA129;
+    border: 2px solid #29691B;
 }
 .rock {
-    background-color:tan;
-    border: 2px solid darkgoldenrod;
+
+    background-color: #AFA981;
+    border: 2px solid #726E54;
 }
 .water {
-    background-color:dodgerblue;
-    border: 2px solid darkblue;
+    background-color:#2980EF;
+    border: 2px solid #1B539B;
 }
 .dragon {
-    color: white;
-    background-color: rgb(106, 119, 233);
-    border: 2px solid navy;
+
+    background-color: #8D98EC;
+    border: 2px solid #5060E1;
 }
 
 .fire {
-    background-color:orangered;
-    border: 2px solid firebrick;
+
+    background-color:#E62829;
+    border: 2px solid #961A1B;
 }
 .poison {
-    background-color:mediumslateblue;
-    border: 2px solid indigo;
+
+    background-color: #9141CB;
+    border: 2px solid #5E2A84;
 }
 
+.bug {
+  background-color: #91A119;
+  border: 2px solid #5E6910;
+}
 
+.flying
+{background-color: #ADD2F5;
+  border: 2px solid #81B9EF;}
+
+.fighting {background-color: #FF8000;
+border: 2px solid #A65300;}
+
+.ground {background-color: #915121;
+  border: 2px solid #5E3515;
+}
+
+.ghost { background-color: #704170;
+border: 2px solid #492A49;}
+
+.steel{background-color: #98C2D1;
+border: 2px solid #60A1B8;}
+
+.electric {background-color: #FAC000;
+border: 2px solid #A37D00;}
+
+.psychic {background-color: #EF4179;
+border: 2px solid #9B2A4F;}
+
+.ice{background-color: #3DCEF3;
+border: 2px solid #28869E;}
+
+.dark {background-color: #624D4E;
+border: 2px solid #403233;}
+
+.fairy {background-color: #EF70EF;
+ border: 2px solid #9B499B; }
 
 p { 
     font-family: "Pixelify Sans";
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     color: brown;
     margin: 5px;
-
 }
 
+.gray {color: gray;
+    font-family: "Pixelify Sans";
+    text-align: center;
+    font-size: 18px;
+    margin: 5px;}
 
 .entry{
   display:flexbox;
@@ -179,8 +190,15 @@ p {
     font-family: "Press Start 2P";
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size:26px;
+    font-size: 1.75vw;
 } 
 
-
+.category{
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  font-family: "Pixelify Sans";
+  font-size: 18px;
+  font-weight: 420;
+}
 

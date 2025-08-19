@@ -1,0 +1,108 @@
+.float{
+    animation: float 10s infinite linear;
+    object-fit:contain;
+    height: 125px;
+    width: 100%;
+    }
+
+ @keyframes float {
+  0% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+  25% {
+    transform: rotate(10deg) translate(20px, 3px);
+  }
+  50% {
+    transform: rotate(-10deg) translate(-3px, 13px);
+  }
+  75% {
+    transform: rotate(8deg) translate(-16px, -10px);
+  }
+  100% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+ }
+
+.drift {
+  animation: drift 5s infinite linear;
+}
+
+@keyframes drift {
+0% {
+    transform: rotate(2deg) translate(0, 0);
+  }
+  25% {
+    transform: rotate(10deg) translate(20px, 3px);
+  }
+  50% {
+    transform: rotate(-10deg) translate(-3px, 13px);
+  }
+  75% {
+    transform: rotate(6deg) translate(-14px, -10px);
+  }
+  100% {
+    transform: rotate(2deg) translate(0, 0);
+  }
+}
+
+.puff {
+   animation: puff 1.50s cubic-bezier(0.47, 0, 0.75, 0.72) infinite alternate;
+   
+}
+
+
+ .bounce{
+animation: bounce 0.8s ease infinite;
+
+}
+
+@keyframes bounce{
+  50% {
+    transform: translateY( -5px) scaleX( 0.95 ) scaleY( 1.03 );
+  }
+  0%,100% {
+    transform: scaleX( 1 ) scaleY( 1 );}
+  }
+
+
+.heartBeat {animation: heartBeat 2s ease-in-out infinite; 
+}
+  @keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+
+  14% {
+
+    transform: scale(1.3);
+  }
+
+  28% {
+    transform: scale(1);
+  }
+
+  42% {
+    transform: scale(1.3);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+}
+
+.swing {animation: swing 4s infinite linear;}
+
+
+
+  @keyframes swing {
+  20% {
+    transform: rotate3d(0, 0, 1, 15deg); }
+  40% {
+    transform: rotate3d(0, 0, 1, -10deg) translateY(-15px) scale(1.15);}
+  60% {
+    transform: rotate3d(0, 0, 1, 0deg); }
+  80% {
+    transform: rotate3d(0, 0, 1, -15deg); }
+  0%, 100% {
+    transform: rotate3d(0, 0, 1, 0deg) translateY(5px) scale(0.95); } }
+
