@@ -4,6 +4,23 @@ background-color: #D22B2B;
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*FOR NAME*/
 .press-start-2p-regular {
   font-family: "Press Start 2P";
@@ -62,7 +79,7 @@ background-color: #D22B2B;
     background-color: white;
     text-align: center;
     flex-wrap: wrap;
-
+    overflow: hidden;
 }
 
 .number{
