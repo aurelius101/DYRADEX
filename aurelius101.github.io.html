@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=VT323&display=swap');
+</style>
+
+<style>
+
+.container{
+    padding: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    background-color: aliceblue;
+}
+
+
+.pokeball{
+    position: relative;
+    margin: auto; 
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    transition: 0.3s ease-in-out;
+    }
+
+.pokeball:hover{
+    .pokemon{opacity: 1;}
+    transform: scale(1.2);
+}
+
+.pokemon{
+    display: grid;
+    margin: auto;
+    justify-content: start;
+    align-content: start;
+    opacity: 1;
+}
+
+
+.container .pokeball .content {
+  position : absolute;
+  top : 100%;
+  font-family: Press Start 2P;
+  font-weight: 2;
+  font-style: normal;
+  text-align : center;
+  margin:auto;
+  justify-self: center;
+  opacity : 0;
+  transition : 0.3s ease;
+}
+
+.container .pokeball:hover .content {
+   opacity : 1;
+   transition-delay: 0.2s;
+  
+}
+
+
+/*ANIMATION*/
+
+.bounce {
+      animation: bounce 0.8s ease infinite;
+    }
+ 
+@keyframes bounce {
+  0%,100% {
+    transform: translateY(-5%) scaleX( 1 ) scaleY( 1 );
+    }
+    50%{
+         transform: translateY(0%) scaleX( 0.95 ) scaleY( 1.03 );
+  }
+}
+
+.Shake{
+    animation: 3s Shake infinite;
+     transform-origin: 75px 100px
+}
+@keyframes Shake{
+    0%   {left:-30px; transform: rotate(0deg)}
+    2%  {left:-25px; transform: rotate(20deg)}
+    4%  {left:-30px; transform: rotate(0deg)}
+    6%  {left:-35px; transform: rotate(-20deg)}
+    8%  {left:-30px; transform: rotate(0deg)}
+    100% {left:-30px; transform: rotate(0deg)}
+}
+
+
+h2{text-align: center;
+color: white;}
+
+.press-start-2p-regular {
+  font-family: "Press Start 2P";
+  font-weight: 50;
+  font-style: normal;
+}
+
+.p{
+    text-align: center;
+    font-size: 10;}
+    
+    .grass{
+        color: #3FA129;
+    }
+
+    .water{color:#2980EF}
+
+    .fire{color: #E62829;}
+
+body{text-align: center;
+background-color: seagreen;
+font-family: "Press Start 2P";
+font-style: normal;
+}
+</style>
+</head>
+
+<body>
+
+<h2>CHOOSE YOUR STARTER</h2>
+
+
+<div class = "container">
+   <!--CHEEPIT-->
+
+    <div class = "pokeball"><img src="pokeball1.png" class = Shake>
+          <div class = "pokemon"><a href="pokedex.html"><img src="sprites/cheepit-export.png" class = bounce></a></div>
+           <div class = content>
+                <p class = grass>Cheepit</p>
+                <p class = grass>Seedling Pokemon</p>
+            </div>
+        </div>
+
+
+
+    <!--INKLE-->
+
+    <div class = "pokeball"><img src="pokeball1.png" class = Shake>
+        <div class="pokemon"><a href="pokedex.html"><img src="sprites/inkle-export.png" class = bounce></a></div>
+            <div class = content>
+                <p class = water>Inkle</p>
+                <p class = water>Ink Pokemon</p>
+            </div>
+     
+    </div> 
+
+    <!--MONGROWL-->
+       <div class = "pokeball"><img src="pokeball1.png" class = Shake>
+        <div class = "pokemon"><a href="pokedex.html"><img src="sprites/mongrowl-export.png" class = bounce></a>
+         </div>
+         <div class = content>
+                <p class = fire>Mongrowl</p>
+                <p class = fire>Puppy Pokemon</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
