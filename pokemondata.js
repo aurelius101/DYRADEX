@@ -193,7 +193,7 @@ $('.card:First')
      $("#mngrl .wunit").prepend(`10kg`)
      $("#mngrl .type1").append(mngrl.type1)
           .addClass("fire");
-     $("#mngrl .footprint").append('<img src = "mongrowl pawprint.png"/>');
+     $("#mngrl .footprint").append('<img src = "Mongrowl pawprint.png"/>');
      $("#mngrl .entry")
           .html(`It disperses heat through its large ears. <br>The intensity and heat of the flames indicate Mongrowl’s emotions. 
                Its flames never goes out, <br>just like its loyalty.`);
@@ -215,7 +215,7 @@ $('.card:First')
      $("#scrhnd .wunit").prepend(`20kg`)
      $("#scrhnd .type1").append(scrhnd.type1)
           .addClass("fire");
-     $("#scrhnd .footprint").append('<img src = "scorchound paw.png"/>');
+     $("#scrhnd .footprint").append('<img src = "Scorchound paw.png"/>');
      $("#scrhnd .entry")
           .html(`Its flames are often blazing of its own control.
                <br>It displays erratic and aggressive behaviour, and will often seek solitude, afraid of accidentally harming its Trainer.`);
@@ -236,7 +236,7 @@ $('.card:First')
      $("#hwlfr .wunit").prepend(`35kg`)
      $("#hwlfr .type1").append(hwlfr.type1).addClass("fire");
      $("#hwlfr .type2").append(hwlfr.type2).addClass("poison");
-     $("#hwlfr .footprint").append('<img src = "howlfire paw.png"/>');
+     $("#hwlfr .footprint").append('<img src = "Howlfire paw.png"/>');
      $("#hwlfr .entry")
           .html(`  When enraged, its flames become so hot that it renders anything it consumes into ash.
                     <br>Its fiery breath is toxic, and if burned by the toxic flames it spits out, the pain lasts forever.`);
