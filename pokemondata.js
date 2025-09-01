@@ -6,6 +6,7 @@ $(".evoto").css({"backgroundColor": "paleturquoise"});
 $(".info").attr("id", "nameball").append('<img id = "nb" src = "pokeball1.png"/>')
 $(".HT").append("HT");
 $(".WT").append("WT");
+$(".na").css("backgroundColor","gray");
 $(".numname").css({"color":"white"});
 
 
@@ -49,7 +50,7 @@ $('.card')
      $("#chpt div").remove(".evofrom, .type2");
      $("#chpt .evoto").prepend('<img id = "evo" src = "raptanin-truesize.png"/>')
      $("#chpt .pic").prepend('<img class = "sprite" src = "sprites/cheepit-export.png"/>')
-                      $(".sprite").addClass("bounce");
+                      $("#chpt .sprite").addClass("bounce");
      $("#chpt .category").prepend("Seedling");
      $("#chpt .num").append(chpt.num);
      $("#chpt .name").append(chpt.name);
@@ -117,7 +118,7 @@ $('.card:First')
      $("#inkl div").remove(".evofrom, .type2");
      $("#inkl .evoto").prepend('<img id = "evo" src = "jellink-truesize.png"/>')
      $("#inkl .pic").prepend('<img class = "sprite" src = "sprites/inkle-export.png"/>')
-                      $(".sprite").addClass("float");
+                      $("#inkl .sprite").addClass("float");
      $("#inkl .category").prepend("Ink");
      $("#inkl .num").append(inkl.num);
      $("#inkl .name").append(inkl.name);
@@ -140,7 +141,7 @@ $('.card:First')
      $("#jlnk .evofrom").prepend('<img id = "evo" src = "inkle-truesize.png"/>')
      $("#jlnk .evoto").prepend('<img id = "evo" src = "medumbra-truesize.png"/>')
      $("#jlnk .pic").prepend('<img class = "sprite" src = "sprites/jellink-export.png"/>')
-                      $(".sprite").addClass("float");
+                      $("#jlnk .sprite").addClass("float");
      $("#jlnk .category").prepend("Jellyfish");
      $("#jlnk .num").append(jlnk.num);
      $("#jlnk .name").append(jlnk.name);
@@ -162,7 +163,7 @@ $('.card:First')
      $("#mdbr div").remove(".evoto");
      $("#mdbr .evofrom").prepend('<img id = "evo" src = "jellink-truesize.png"/>')
      $("#mdbr .pic").prepend('<img class = "sprite" src = "sprites/medumbra-export.png"/>')
-                      $(".sprite").addClass("float");
+                      $("#mdbr .sprite").addClass("float");
      $("#mdbr .category").prepend("Aggressor");
      $("#mdbr .num").append(mdbr.num);
      $("#mdbr .name").append(mdbr.name);
@@ -292,8 +293,8 @@ $('.card:First')
      $("#pfbg .evofrom").prepend('<img id = "evo" src = "weebler-truesize.png"/>')
      $("#pfbg #evo").css({"transform":"scale(50%"});
      $("#pfbg .pic").prepend('<img class = "sprite" src = "sprites/puffabug-export.png"/>')
-                      $(".sprite").addClass("bounce");
-     $("#pfbg .category").prepend("Diffuser");
+                      $("#pfbg .sprite").addClass("bounce");
+     $("#pfbg .category").prepend("Purifier");
      $("#pfbg .num").append(pfbg.num);
      $("#pfbg .name").append(pfbg.name);
      $("#pfbg .hunit").prepend(`???`)
@@ -315,7 +316,7 @@ $('.card:First')
      $("#crbl .evoto").prepend('<img id = "evo" src = "magpyre-truesize.png"/>')
      $("#crbl #evo").css({"transform":"scale(70%)"});
      $("#crbl .pic").prepend('<img class = "sprite" src = "sprites/corbillash-export.png"/>')
-                      $(".sprite").addClass("bounce");
+                      $("#crbl .sprite").addClass("bounce");
      $("#crbl .category").prepend("Soot Fledgling");
      $("#crbl .num").append(crbl.num);
      $("#crbl .name").append(crbl.name);
@@ -339,7 +340,7 @@ $('.card:First')
      $("#mgpr .evoto").prepend('<img id = "evo" src = "sprites/charcrow-export.png"/>')
      $("#mgpr #evo").css({"transform":"scale(50%)"});
      $("#mgpr .pic").prepend('<img class = "sprite" src = "sprites/magpyre-export.png"/>')
-                      $(".sprite").addClass("bounce");
+                      $("#mgpr .sprite").addClass("bounce");
      $("#mgpr .category").prepend("Kindling Corvid");
      $("#mgpr .num").append(mgpr.num);
      $("#mgpr .name").append(mgpr.name);
@@ -363,7 +364,7 @@ $('.card:First')
      $("#chrcr .evofrom").prepend('<img id = "evo" src = "sprites/magpyre-export.png"/>')
         $("#chrcr #evo").css({"transform":"scale(50%)"});
      $("#chrcr .pic").prepend('<img class = "sprite" src = "sprites/charcrow-export.png"/>')
-                      $(".sprite").addClass("bounce");
+                      $("#chrcr .sprite").addClass("bounce");
      $("#chrcr .category").prepend("Flaming Crow");
      $("#chrcr .num").append(chrcr.num);
      $("#chrcr .name").append(chrcr.name);
@@ -388,7 +389,7 @@ $('.card:First')
      $("#lvbr .evoto").prepend('<img id = "evo" src = "cupibara.png"/>')
      $("#lvbr #evo").css({"transform":"scale(50%)"});
      $("#lvbr .pic").prepend('<img class = "sprite" src = "sprites/lovibara-export.png"/>')
-                      $(".sprite").addClass("bounce");
+                      $("#lvbr .sprite").addClass("bounce");
      $("#lvbr .category").prepend("Lovely");
      $("#lvbr .num").append(lvbr.num);
      $("#lvbr .name").append(lvbr.name);
@@ -410,7 +411,7 @@ $('.card:First')
      $("#cpbr .evofrom").prepend('<img id = "evo" src = "lovibara.png"/>')
      $("#cpbr #evo").css({"transform":"scale(50%)"});
      $("#cpbr .pic").prepend('<img class = "sprite" src = "sprites/cupibara-export.png"/>')
-                      $(".sprite").addClass("bounce");
+                      $("#cpbr .sprite").addClass("bounce");
      $("#cpbr .category").prepend("Cuddly");
      $("#cpbr .num").append(cpbr.num);
      $("#cpbr .name").append(cpbr.name);
@@ -452,7 +453,7 @@ $('.card:First')
      $("#fntsm .evoto").prepend('<img id = "evo" src = "sprites/phantolm-export.png"/>')
      $("#fntsm #evo").css({"transform":"scale(50%)"});
      $("#fntsm .pic").prepend('<img class = "sprite" src = "sprites/fintasm-export.png"/>')
-                      $(".sprite").addClass("float");
+                      $("#fntsm .sprite").addClass("float");
      $("#fntsm .category").prepend("Cavefish");
      $("#fntsm .num").append(fntsm.num);
      $("#fntsm .name").append(fntsm.name);
@@ -474,7 +475,7 @@ $('.card:First')
      $("#phntlm .evofrom").prepend('<img id = "evo" src = "sprites/fintasm-export.png"/>');
      $("#phntlm #evo").css({"transform":"scale(50%)"});
      $("#phntlm .pic").prepend('<img class = "sprite" src = "sprites/phantolm-export.png"/>')
-                      $(".sprite").addClass("float");
+                      $("#phntlm .sprite").addClass("float");
      $("#phntlm .category").prepend("Blind Newt");
      $("#phntlm .num").append(phntlm.num);
      $("#phntlm .name").append(phntlm.name);
@@ -542,7 +543,7 @@ $('.card:first')
      $("#klb .evoto").prepend('<img id = "evo" src = "sprites/orcallous-export.png"/>')
      $("#klb #evo").css({"transform":"scale(50%)"});
      $("#klb .pic").prepend('<img class = "sprite" src = "sprites/kilibye-export.png"/>')
-                      $(".sprite").addClass("bounce");
+                      $("#klb .sprite").addClass("bounce");
      $("#klb .category").prepend("Lure");
      $("#klb .num").append(klb.num);
      $("#klb .name").append(klb.name);
@@ -564,7 +565,7 @@ $('.card:first')
      $("#orcls .evoto").prepend('<img id = "evo" src = "sprites/orvakil-export.png"/>')
      $("#orcls #evo").css({"transform":"scale(50%)"});
      $("#orcls .pic").prepend('<img class = "sprite" src = "sprites/orcallous-export.png"/>')
-                      $(".sprite").addClass("bounce");
+                      $("#orcls .sprite").addClass("bounce");
      $("#orcls .category").prepend("Spite");
      $("#orcls .num").append(orcls.num);
      $("#orcls .name").append(orcls.name);
@@ -587,7 +588,7 @@ $('.card:first')
      $("#orvkl .evofrom").prepend('<img id = "evo" src = "sprites/orcallous-export.png"/>')
           $("#orvkl #evo").css({"transform":"scale(50%)"});
      $("#orvkl .pic").prepend('<img class = "sprite" src = "sprites/orvakil-export.png"/>')
-                      $(".sprite").addClass("bounce");
+                      $("#orvkl .sprite").addClass("bounce");
      $("#orvkl .category").prepend("Vengeance");
      $("#orvkl .num").append(orvkl.num);
      $("#orvkl .name").append(orvkl.name);
