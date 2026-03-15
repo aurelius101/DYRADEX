@@ -51,8 +51,6 @@ footer{
   content: url("footer2.png");
   justify-self: center;
   align-self: center;
-  position: absolute;
-
   font-size: x-large;
   margin: auto;
   margin-left: 10%;
